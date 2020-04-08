@@ -1,4 +1,5 @@
 // let who='';
+var coviddata='';
 let URL='https://nepalcorona.info/api/v1/data/world'
 fetch(URL)
 .then(function(response){
@@ -7,11 +8,9 @@ fetch(URL)
 //    console.log(covid);
        if(covid.length>0)
        {
-           var coviddata='';
+           
            covid.forEach(function(data){
-            // coviddata +="<tr>";
-            if(data.country!="")
-            {
+            coviddata +="<tr>";
             coviddata +="<tr><td>"+data.country+"</td>";
             coviddata +="<td>"+data.totalCases+"</td>";
             coviddata +="<td>"+data.newCases+"</td>";
@@ -21,29 +20,29 @@ fetch(URL)
             coviddata +="<td>"+data.totalRecovered+"</td>";
             coviddata +="<td>"+data.criticalCases+"</td></tr>";
             console.log(coviddata);
-            }
             document.getElementById('coranavirus').innerHTML=coviddata;
            })
        }
    })
-   //for search
+
+   //function search()
 function search(){
-    let filter=document.getElementById("search").value.toUpperCase(); 
-    let table=document.getElementById("coranavirus");
-    let tr=table.getElementsByTagName("tr");
-    for(let i=0;i<tr.length;i++)
-    {
-     let td=tr[i].getElementsByTagName("td")[0];
-        if(td)
-        {
-         let txtValue=td.textContent||td.innerText;
-         if(txtValue.toUpperCase().indexOf(filter)>-1) 
-            {
-            tr[i].style.display="";
-            }else
-            {
-            tr[i].style.display="none";
-            }
-        }       
-    }
+let filter=document.getElementById('filter').value.toUpperCase(); 
+let box =document.getElementsByClassName('table');
+// let tr=box.getElementsByTagName('tr');
+for (var i=0;i<coviddata.length;i++){
+     let  td=coviddata[i].getElementsByTagName ('td')[0];
+     if(td){
+         let text=td.textContent||td.innerHTML;
+         if(text.toUpperCase().indexof(filter)>-1)
+         {
+             coviddata[i].style.display="";
+
+         }else{
+             coviddata[i].style.display="none";
+         }
+     }
 }
+console.log(tr);
+
+    }

@@ -2,12 +2,10 @@ h1{
     text-align: center;
 }
 #search{
-    
-    border-radius: 10px;
     margin:5 auto;
     border-radius: 10px;
-    margin-left: 580px;
+    margin-left: 20px;
+    margin-left: 40%;
     border: none;
     border-radius: 15px; 
-    background-color:whitesmoke;
 }

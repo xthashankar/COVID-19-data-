@@ -10,8 +10,6 @@ fetch(URL)
            var coviddata='';
            covid.forEach(function(data){
             // coviddata +="<tr>";
-            if(data.country!="")
-            {
             coviddata +="<tr><td>"+data.country+"</td>";
             coviddata +="<td>"+data.totalCases+"</td>";
             coviddata +="<td>"+data.newCases+"</td>";
@@ -21,29 +19,24 @@ fetch(URL)
             coviddata +="<td>"+data.totalRecovered+"</td>";
             coviddata +="<td>"+data.criticalCases+"</td></tr>";
             console.log(coviddata);
-            }
             document.getElementById('coranavirus').innerHTML=coviddata;
            })
        }
    })
-   //for search
 function search(){
-    let filter=document.getElementById("search").value.toUpperCase(); 
-    let table=document.getElementById("coranavirus");
-    let tr=table.getElementsByTagName("tr");
-    for(let i=0;i<tr.length;i++)
+    var filter= document.getElementById("search").value.toUpperCase(); 
+    var table = document.getElementById("coranavirus");
+    var tr = table.getElementsByTagName("tr");
+    for (var i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td)
     {
-     let td=tr[i].getElementsByTagName("td")[0];
-        if(td)
-        {
-         let txtValue=td.textContent||td.innerText;
-         if(txtValue.toUpperCase().indexOf(filter)>-1) 
-            {
-            tr[i].style.display="";
-            }else
-            {
-            tr[i].style.display="none";
-            }
-        }       
+     var txtValue = td.textContent || td.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      tr[i].style.display = "";
+    } else {
+      tr[i].style.display = "none";
     }
+  }       
+}
 }

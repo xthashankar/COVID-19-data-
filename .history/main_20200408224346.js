@@ -5,13 +5,11 @@ fetch(URL)
    return response.json()
 }).then(function(covid){
 //    console.log(covid);
-       if(covid.length>0)
+    //    if(covid.length>0)
        {
            var coviddata='';
            covid.forEach(function(data){
             // coviddata +="<tr>";
-            if(data.country!="")
-            {
             coviddata +="<tr><td>"+data.country+"</td>";
             coviddata +="<td>"+data.totalCases+"</td>";
             coviddata +="<td>"+data.newCases+"</td>";
@@ -21,7 +19,6 @@ fetch(URL)
             coviddata +="<td>"+data.totalRecovered+"</td>";
             coviddata +="<td>"+data.criticalCases+"</td></tr>";
             console.log(coviddata);
-            }
             document.getElementById('coranavirus').innerHTML=coviddata;
            })
        }
