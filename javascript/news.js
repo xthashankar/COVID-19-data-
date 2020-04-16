@@ -6,7 +6,7 @@ fetch("https://nepalcorona.info/api/v1/news")
     covid=news.data;
     covid.forEach(function(user){
         let id=document.createElement('div');
-        id.innerHTML=user.lang.np;     
+        id.innerHTML=user.title;     
         
         
         let image=document.createElement('img');
