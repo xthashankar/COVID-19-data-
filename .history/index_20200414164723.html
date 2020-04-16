@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/nqa.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html" class="company-title">
+             <img src="image/coronavirus.png" style="margin: 5px;margin-left: 40px;height: 50px;
+                                        width: 50px;">
+            <h5>COVID-19 (CoronaVirus)</h5>
+        </a>
+        <a href="index.html" class="company-title"></a>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a class="active" href="intro.html">Introduction</a></li>
+            <li><a href="world.html">World Statistics</a></li>
+            <li><a href="news.html">News</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">FAQ
+                </button>
+                <div class="dropdown-content">
+                  <a href="qa.html">English</a>
+                  <a href="nqa.html">Nepali</a>
+                </div>
+        </ul>
+    </div>
+
+
+
+
+
+
+    <!-- <ul> -->
+        <ul>
+            <img src="image/coronavirus.png">
+            <li><a class="nav" href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Signup</a></li>
+           
+            
+        </ul>
+    </ul>
+    
+    <h1>Welcome to Corona-Virus(COVID-19) Data Center</h1>
+    <input type="text" name="filter" id="search" placeholder="Search By Country Name" onkeyup="search()">
+    <div class="container">
+      
+        <br>
+        <table class="table table-bordered  table-striped">
+            <thread>
+                <tr>
+                    <th>Country</th>
+                    <th>Total Cases</th>
+                    <th>new Cases</th>
+                    <th>Total Death</th>
+                    <th>New Death</th>
+                    <th>Active Cases</th>
+                    <th>Recovered</th>
+                    <th>Criticalcases</th>
+            </tr>
+            </thread>
+            <tbody  id="coranavirus">
+            </tbody>
+        </table>
+    </div>  
+</body>
+<script src="javascript/main.js"></script>
+</html>

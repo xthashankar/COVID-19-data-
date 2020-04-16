@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+   
+   <nav>
+       <a href="index.html">
+            <img src="image/coronavirus.png" style="margin:5px;
+            margin-left: 110px;">
+            <h5>CORONA-VIRUS</h5>
+        </a>
+        <ul>
+            <li><a href="#"><b>FAQ</b></a>
+                <ul>
+                    <li><a href= "">Nepali</a></li>
+                    <li><a href="">English</a></li>
+                </ul>
+                </li>
+            <li><a href="#"><b>News</b></a></li>` 
+            <li><a href="#"><b>Home</b></a></li>
+        </ul>  
+    </nav>
+    
+    
+    <h1>Welcome to Corona-Virus(COVID-19) Data </h1>
+    <input type="text" name="filter" id="search" placeholder="Search By Country Name" onkeyup="search()">
+    <div class="container">
+      
+        <br>
+        <table class="table table-bordered  table-striped">
+            <thread>
+                <tr>
+                    <th>Country</th>
+                    <th>Total Cases</th>
+                    <th>new Cases</th>
+                    <th>Total Death</th>
+                    <th>New Death</th>
+                    <th>Active Cases</th>
+                    <th>Recovered</th>
+                    <th>Criticalcases</th>
+            </tr>
+            </thread>
+            <tbody  id="coranavirus">
+            </tbody>
+        </table>
+    </div>  
+</body>
+<script src="javascript/main.js"></script>
+</html>

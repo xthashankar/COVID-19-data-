@@ -1,0 +1,145 @@
+/* 
+ul{
+  
+  overflow: hidden;
+  background-color:#333;
+}
+li{
+ float:right;
+}
+li a{
+  
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover{
+  background-color: #111;
+}
+
+
+
+.dropbtn {
+  background-color:black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+ 
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+   
+}
+
+ul.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+ul.dropdown-content a:hover {background-color: yellow;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: red;} */
+/* 
+*{
+  margin:0;
+  padding:0;
+} */
+nav{
+  width:100%;
+  height:60px;
+  background-color:black;
+}
+
+nav img{
+  height: 50px;
+  width: 50px;
+  float: left;
+}
+
+nav h5{
+  /*margin-left: 0px; */
+  font-family:arial;
+  color:whitesmoke;
+  line-height:60px;
+  float:left;
+} 
+nav ul{
+  overflow:visible;
+  list-style-type:none;
+  float:right;
+}
+nav ul li{
+  float:right;
+  list-style: none;
+  position: relative;
+  
+ 
+}
+nav ul li a{
+  display:block;
+  font-family:arial;  
+  color:white;
+  font-size:14px  ;
+  padding:18px 14px;
+  text-decoration:none;
+  cursor: pointer;
+  
+}
+nav ul li ul {
+  display:none;
+  position: absolute; 
+  background-color:black;
+  padding: 10px;
+  border-radius: 0px 0px 4px 4px;
+}
+nav ul li:hover ul {
+  display:block;
+  text-decoration:none; 
+  
+
+ 
+} 
+nav ul li ul li{
+   width:auto;
+   border-radius:4px;
+}
+nav ul li ul li a {
+  padding:8px 14px;
+}
+
+nav ul li ul li a:hover {
+  background-color:whitesmoke ;
+  text-decoration: none;
+}
+
+
+h1{
+  text-align: justify;
+}
+#search{
+  border-radius: 10px;
+  margin:5 auto;
+  border-radius: 10px;
+  margin-left: 535px;
+  border: none;
+  border-radius: 15px; 
+  background-color:whitesmoke;
+}
