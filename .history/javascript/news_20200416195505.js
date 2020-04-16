@@ -41,7 +41,7 @@ fetch("https://nepalcorona.info/api/v1/news")
         display.style.float='left';
         display.style.display='inline-block';
         display.style.margin='10px';
-        display.style.backgroundColor='whitesmoke'
+        display.style.backgroundColor='yellow'
         document.body.appendChild(display);
         console.log('asad',user);
 

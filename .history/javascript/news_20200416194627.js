@@ -3,11 +3,11 @@ fetch("https://nepalcorona.info/api/v1/news")
 .then(function(response){return response.json()})
 .then(function(news){
     // console.log(news)
+    if(data.length>0){
         covid=news.data;
          covid.forEach(function(user){
-        let id=document.createElement('h4');
-        id.innerHTML=user.title;    
-        id.style.margin='10px'; 
+        let id=document.createElement('div');
+        id.innerHTML=user.title;     
         
         
         let image=document.createElement('img');
@@ -37,7 +37,7 @@ fetch("https://nepalcorona.info/api/v1/news")
         display.style.padding='5px';
         display.style.alignItems='center';
         display.style.width='230px';
-        display.style.height='585px';
+        display.style.height='500px';
         display.style.float='left';
         display.style.display='inline-block';
         display.style.margin='10px';
