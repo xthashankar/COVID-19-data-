@@ -4,16 +4,11 @@ fetch("https://nepalcorona.info/api/v1/news")
 .then(function(news){
     // console.log(news)
         covid=news.data;
-         covid.forEach(function(user){
+        covid.forEach(function(user){
         let id=document.createElement('h4');
         id.innerHTML=user.title;    
         id.style.margin='10px'; 
 
-        covid=news.data;
-        covid.forEach(function(user){
-        let id=document.createElement('div');
-        id.innerHTML=user.title;     
-        
         let image=document.createElement('img');
         image.src=user.image_url;
         image.style.width='230px';
